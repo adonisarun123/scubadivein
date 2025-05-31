@@ -362,9 +362,9 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
       {/* Main Content */}
       <section className="py-20">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Left Content */}
-            <div className="lg:col-span-2 space-y-12">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
+            {/* Left Content - Changed from lg:col-span-2 to lg:col-span-8 for more space */}
+            <div className="lg:col-span-8 space-y-12">
               {/* What You'll Learn */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -372,11 +372,11 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-heading font-bold mb-6">What You'll Learn</h2>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   {course.whatYouLearn.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-3">
+                    <div key={index} className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700 flex-1">{item}</p>
+                      <p className="text-gray-700 text-base leading-relaxed">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -391,14 +391,14 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
                 <h2 className="text-3xl font-heading font-bold mb-6">Course Schedule</h2>
                 <div className="space-y-4">
                   {course.schedule.map((day, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                      <div className="w-20 flex-shrink-0">
-                        <div className="bg-coral-orange text-white rounded-lg p-2 text-center">
-                          <p className="font-semibold">{day.day}</p>
+                    <div key={index} className="flex items-start gap-4">
+                      <div className="w-24 flex-shrink-0">
+                        <div className="bg-coral-orange text-white rounded-lg px-3 py-2 text-center">
+                          <p className="font-semibold text-sm">{day.day}</p>
                         </div>
                       </div>
                       <div className="flex-1">
-                        <p className="text-gray-700">{day.activities}</p>
+                        <p className="text-gray-700 leading-relaxed">{day.activities}</p>
                       </div>
                     </div>
                   ))}
@@ -413,11 +413,11 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
               >
                 <h2 className="text-3xl font-heading font-bold mb-6">Requirements</h2>
                 <div className="bg-sand-beige/30 rounded-lg p-6">
-                  <ul className="space-y-3">
+                  <ul className="space-y-4">
                     {course.requirements.map((req, index) => (
-                      <li key={index} className="flex items-start space-x-3">
+                      <li key={index} className="flex items-start gap-3">
                         <AlertCircle className="w-5 h-5 text-coral-orange mt-0.5 flex-shrink-0" />
-                        <p className="text-gray-700">{req}</p>
+                        <p className="text-gray-700 leading-relaxed">{req}</p>
                       </li>
                     ))}
                   </ul>
@@ -425,26 +425,26 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
               </motion.div>
             </div>
 
-            {/* Right Sidebar */}
-            <div className="space-y-8">
+            {/* Right Sidebar - Changed from standalone to lg:col-span-4 */}
+            <div className="lg:col-span-4">
               {/* Booking Card */}
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl shadow-xl p-6 sticky top-28"
+                className="bg-white rounded-2xl shadow-xl p-6 lg:sticky lg:top-28"
               >
                 <div className="text-center mb-6">
                   <p className="text-sm text-gray-500">Starting from</p>
-                  <p className="text-4xl font-bold text-primary-blue">{course.price}</p>
+                  <p className="text-3xl lg:text-4xl font-bold text-primary-blue">{course.price}</p>
                 </div>
 
-                <h3 className="text-xl font-semibold mb-4">What's Included:</h3>
-                <ul className="space-y-2 mb-6">
+                <h3 className="text-lg lg:text-xl font-semibold mb-4">What's Included:</h3>
+                <ul className="space-y-3 mb-6">
                   {course.included.map((item, index) => (
-                    <li key={index} className="flex items-start text-sm">
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                      <span className="text-gray-700">{item}</span>
+                    <li key={index} className="flex items-start gap-2 text-sm">
+                      <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700 leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
