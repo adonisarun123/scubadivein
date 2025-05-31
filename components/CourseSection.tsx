@@ -6,35 +6,35 @@ import { Clock, Users, Award, ArrowRight } from 'lucide-react'
 
 const courses = [
   {
-    id: 'open-water',
+    id: 'open-water-diver',
     title: 'Open Water Diver',
     description: 'Your first step into the underwater world. No experience needed!',
     duration: '4 days',
     price: '₹29,999',
     level: 'Beginner',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1920',
     features: ['No experience required', 'Internationally recognized', 'Lifetime certification'],
     color: 'from-aqua-cyan to-primary-blue'
   },
   {
-    id: 'advanced',
+    id: 'advanced-open-water',
     title: 'Advanced Open Water',
     description: 'Expand your skills and explore deeper with 5 adventure dives.',
     duration: '3 days',
     price: '₹27,500',
     level: 'Intermediate',
-    image: 'https://images.unsplash.com/photo-1586508577428-120d21d3ca2e?q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1586508577428-120d21d3ca2e?q=80&w=1920',
     features: ['5 adventure dives', 'Deep diving to 30m', 'Navigation skills'],
     color: 'from-primary-blue to-deep-ocean'
   },
   {
-    id: 'rescue',
+    id: 'rescue-diver',
     title: 'Rescue Diver',
     description: 'Learn to prevent and manage dive emergencies with confidence.',
     duration: '4 days',
     price: '₹32,000',
     level: 'Advanced',
-    image: 'https://images.unsplash.com/photo-1559827083-d7f12a4cbe2f?q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=1920',
     features: ['Emergency management', 'Rescue techniques', 'First aid skills'],
     color: 'from-coral-orange to-primary-blue'
   }

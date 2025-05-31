@@ -14,7 +14,7 @@ const allCourses = [
     duration: '4 days',
     price: '₹29,999',
     depth: 'Up to 18m',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1920',
     highlights: [
       'No prior experience required',
       'Internationally recognized certification',
@@ -30,7 +30,7 @@ const allCourses = [
     duration: '2 days',
     price: '₹19,999',
     depth: 'Up to 12m',
-    image: 'https://images.unsplash.com/photo-1583623025817-d180a2221d0a?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1583623025817-d180a2221d0a?q=80&w=1920',
     highlights: [
       'Quick certification option',
       'Dive with a professional',
@@ -46,7 +46,7 @@ const allCourses = [
     duration: '3 days',
     price: '₹27,500',
     depth: 'Up to 30m',
-    image: 'https://images.unsplash.com/photo-1586508577428-120d21d3ca2e?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1586508577428-120d21d3ca2e?q=80&w=1920',
     highlights: [
       '5 adventure dives',
       'Deep diving to 30m',
@@ -62,7 +62,7 @@ const allCourses = [
     duration: '4 days',
     price: '₹32,000',
     depth: 'Varies',
-    image: 'https://images.unsplash.com/photo-1559827083-d7f12a4cbe2f?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=1920',
     highlights: [
       'Emergency management',
       'Self-rescue techniques',
@@ -78,7 +78,7 @@ const allCourses = [
     duration: '6-8 weeks',
     price: '₹85,000',
     depth: 'Professional',
-    image: 'https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?q=80&w=1920',
     highlights: [
       'Professional certification',
       'Lead certified divers',
@@ -94,7 +94,7 @@ const allCourses = [
     duration: '1 day',
     price: '₹12,500',
     depth: 'Varies',
-    image: 'https://images.unsplash.com/photo-1559950338-822d40b37cd2?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1559950338-822d40b37cd2?q=80&w=1920',
     highlights: [
       'Extended bottom times',
       'Shorter surface intervals',
@@ -110,7 +110,7 @@ const allCourses = [
     duration: '2 days',
     price: '₹22,000',
     depth: 'Up to 40m',
-    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=1920',
     highlights: [
       'Dive to 40 meters',
       'Deep dive planning',
@@ -126,7 +126,7 @@ const allCourses = [
     duration: '2 days',
     price: '₹18,500',
     depth: 'Varies',
-    image: 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1583212292454-1fe6229603b7?q=80&w=1920',
     highlights: [
       'Camera techniques',
       'Composition skills',
