@@ -43,8 +43,8 @@
     @apply bg-gradient-to-r from-primary-blue to-aqua-cyan bg-clip-text text-transparent;
   }
 
-  .ocean-wave {
-    @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0];
+  .gradient-ocean {
+    @apply bg-gradient-to-br from-deep-ocean via-primary-blue to-aqua-cyan;
   }
 
   .parallax-section {

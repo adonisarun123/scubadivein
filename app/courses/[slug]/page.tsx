@@ -360,23 +360,24 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
       </section>
 
       {/* Main Content */}
-      <section className="py-20">
+      <section className="py-20 relative">
         <div className="container-custom">
           <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
             {/* Left Content - Changed from lg:col-span-2 to lg:col-span-8 for more space */}
-            <div className="lg:col-span-8 space-y-12">
+            <div className="lg:col-span-8 space-y-12 overflow-visible">
               {/* What You'll Learn */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
+                className="overflow-visible"
               >
                 <h2 className="text-3xl font-heading font-bold mb-6">What You'll Learn</h2>
                 <div className="space-y-4">
                   {course.whatYouLearn.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
+                    <div key={index} className="flex items-start gap-3 w-full">
                       <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
-                      <p className="text-gray-700 text-base leading-relaxed">{item}</p>
+                      <p className="text-gray-700 text-base leading-relaxed break-words pr-4">{item}</p>
                     </div>
                   ))}
                 </div>
@@ -472,7 +473,7 @@ export default function CourseDetailsPage({ params }: { params: { slug: string }
       </section>
 
       {/* Related Courses */}
-      <section className="py-20 bg-sand-beige/20">
+      <section className="py-20 bg-sand-beige/20 mb-16">
         <div className="container-custom">
           <h2 className="text-3xl font-heading font-bold mb-8">You Might Also Like</h2>
           <div className="grid md:grid-cols-3 gap-6">
