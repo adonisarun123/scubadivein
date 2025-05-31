@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-gray-800 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .btn-primary {
+    @apply bg-primary-blue text-white px-6 py-3 rounded-full font-semibold 
+           hover:bg-deep-ocean transition-all duration-300 transform hover:scale-105
+           shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-coral-orange text-white px-6 py-3 rounded-full font-semibold 
+           hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105
+           shadow-lg hover:shadow-xl;
+  }
+
+  .card-hover {
+    @apply transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-blue to-aqua-cyan bg-clip-text text-transparent;
+  }
+
+  .ocean-wave {
+    @apply absolute bottom-0 left-0 w-full overflow-hidden leading-[0];
+  }
+
+  .parallax-section {
+    @apply relative overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .animate-float-delay-1 {
+    animation-delay: 0.5s;
+  }
+
+  .animate-float-delay-2 {
+    animation-delay: 1s;
+  }
+
+  .backdrop-blur-light {
+    backdrop-filter: blur(8px);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-sand-beige;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary-blue rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-deep-ocean;
+}
+
+/* Loading animation */
+.loading-wave {
+  display: inline-block;
+  animation: wave-animation 1.5s ease-in-out infinite;
+}
+
+.loading-wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading-wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes wave-animation {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+} 
